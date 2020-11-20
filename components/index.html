@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Case Study</title>
+<title>Case Study: Components</title>
 
 <meta charset="utf-8">
 
@@ -13,198 +13,343 @@
 
 <script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
 
+<style>
+	body{
+		text-align: center;
+	}
+img{
+	display: inline-block;
+	width:50%;
+}
+
+.right{
+	display: inline;
+	text-align:right;
+}
+
+#selected{
+	color: orange;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="outer-container">
 
-<div class="parts">
 <h1>Components</h1>
-<!-- start defaults -->
+
+<!--------------- start defaults for type and color ----------------->
+
 <div class="defaults">
-<h2>Typography and Color:</h2>
-<hr> 
-<div class="screenshots">
-<img src="img/type-color.jpg" alt="image">
-<hr>
-</div>
-</div>
+<h2>Typography and Colors:</h2>
+
+	<div class="screenshots">
+	<img src="img/type-color.jpg" alt="image">
+	<hr>
+	</div>
 <!-- end defaults -->
 
 <!-- start header -->
-<header class="header-section">
 
-<h2>Header and Navigation Components:</h2> 
-<hr>  
-<div class="screenshots">
-<img src="img/nav.jpg" alt="image">
-<hr>
-</div>
-<div class="code">
+	<div class="screenshots">
+	<h2>Header and Navigation Section</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/0.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/0.1.jpg" alt="image">
+	<img src="img/0.2.jpg" alt="image">
 
-    <h3>Code:</h3><hr>      
-    
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/0.2.1.jpg" alt="image">
+	<img src="img/0.2.2.jpg" alt="image">
+	<img src="img/0.2.3.jpg" alt="image">
+	<img src="img/0.2.4.jpg" alt="image">
+	<img src="img/0.2.5.jpg" alt="image">
+	<img src="img/0.3.1.jpg" alt="image">
+	<hr>
+	<h6>Code:</h6>
+	<hr>
+	</div>
+
+<header>	  
+
 <!-- start site-navigation -->
+
 <nav>
-    <ul class="nav-bar">
-      <li class="logo"><a href="#">PAUL PYCRAFT</a></li>
-      <li class="nav-bar__item nav-bar__item active"><a href="#">Home</a></li>     
-      <li class="nav-bar__item"><a href="#">The Octopus&#8217;s Holiday</a></li>
-      <li class="nav-bar__item"><a href="#">The Octopus Series</a></li>
-      <li class="nav-bar__item"><a href="#">About the Author</a></li>
-      <li class="nav-bar__item"><a href="#">Contact</a></li>	
-    </ul>
+<ul class="nav-bar right">
+<li class="logo"><a href="#">PAUL PYCRAFT</a></li>
+
+<li class="nav-bar__item"><a href="#" id="selected">Home</a>&nbsp;<a href="#">The Octopus&#8217;s Holiday</a>
+
+	&nbsp;
+	<a href="#">The Octopus Series</a></li>
+</ul>
+
+<ul class="nav-bar right">
+<li class="nav-bar__item"><a href="#">About the Author</a>&nbsp;<a href="#">Contact</a></li>	
+</ul>
 </nav>
+
 <!-- end site-navigation -->
-</div>
+
 </header>
-<!-- end header -->
+<!-- end header -->                              
 
+<main> <!-- start sections between header and footer  -->
 
+<article> <!-- start section 1 -->
 
-<!-- start sections -->
+	<hr>
+	<div class="screenshots">
+	<h2>Section 1</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/1.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/1.2.jpg" alt="image">	
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/1.1.jpg" alt="image"><br>	
+	<img src="img/1.2.1.jpg" alt="image"><br>
+	<img src="img/1.2.2.jpg" alt="image"><br>
+	<img src="img/1.2.3.jpg" alt="image">		
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
 
-<!-- start section 1 -->
+<div><h1 >Home</h1></div>
 
-<div class="section1">
+<h1 >Welcome to Paul Pycraft</h1>
 
-    <h2>Section 1 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/1.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
+<p>Author of The Octopus Series Children&#8217;s Books</p>
 
-        </div>
+</article>   <!-- end section 1: hero with background image -->
+
+<article> <!-- start section 2: available-->
+
+	<hr>
+	<div class="screenshots">
+	<h2>Section 2</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/2.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/2.1.jpg" alt="image">	
+	<img src="img/2.2.jpg" alt="image">	
+
+	<hr>
+	<h5>Adoms:</h5>
+
+	<img src="img/2.1.1.jpg" alt="image"><br>
+	<img src="img/2.1.2.jpg" alt="image"><br>	
+	<img src="img/2.2.1.jpg" alt="image"><br>	
+	<img src="img/2.2.2.jpg" alt="image"><br>
+	<img src="img/2.2.3.jpg" alt="image"><br>	
+	<img src="img/2.2.4.jpg" alt="image">	
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
+
+<div>
+<figure>
+<img src="img/2.1.1.jpg" alt="image">
+<figcaption>Meet Doris and Shelly</figcaption>
+</figure>
+</div>
+
+<h2>The Octopus&#8217;s Holiday</h2>
+
+<p>Christmas will never be the same again in the little town of Fishery. And it will never be the same again for you, thanks to two one-of-a-kind octopus friends named Doris and Shelly.&nbsp;</p>
+
+<div><a>Available at Bookshop.org</a></div>
+<div><a>Available at Amazon.com</a></div>
+
+</article>   <!-- end section 2:  -->
+
+<article> <!-- start section 3: features-->
+
+	<hr>
+	<div class="screenshots">
+	<h2>Section 3</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/3.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/3.1.jpg" alt="image">
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/3.1.1.jpg" alt="image"><br>
+	<img src="img/3.1.2.jpg" alt="image"><br>	
+	<img src="img/3.2.jpg" alt="image">	
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
+
+<h2>Watch Special Features</h2>
+
+<p>Enjoy amazing videos of the talented Melissa Vandiver&#8217;s original illustrations coming to life</p>
+
+<div>
+<img src="img/3.2.jpg" alt="image">
+</div>
+
+</article>   <!-- end section 3:  -->
+
+<article> <!-- start section 4: series-->   
+
+	<hr>
+	<div class="screenshots">
+	<h2>Section 4</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/4.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/4.1.jpg" alt="image">
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/4.2.jpg" alt="image">	<br>
+	<img src="img/4.1.1.jpg" alt="image"><br>
+	<img src="img/4.1.2.jpg" alt="image"><br>
+	<img src="img/4.1.3.jpg" alt="image">
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
+
+<div>
+
+<h2>The Octopus Series</h2>
+
+<p>Find out more about the next book in the series:&nbsp;<em>An Eight-Legged Walk through Octopus Town</em>.</p>
+
+<div><a href="#">Learn more!</a></div>
 
 </div>
 
-<div class="section2">
+</article>   <!-- end section 4  -->
 
-    <h2>Section 2 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/2.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
+<article>   <!-- start section 5: quote--> 
 
-        </div>
+	<hr>
+	<div class="screenshots">
+	<h2>Section 5</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/5.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/5.2.jpg" alt="image">
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/5.1.jpg" alt="image">	<br>
+	<img src="img/5.2.1.jpg" alt="image"><br>
+	<img src="img/5.2.2.jpg" alt="image"><br>
+	<img src="img/5.2.3.jpg" alt="image"><br>	
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
+
+<div>
+	<img src="img/5.1.jpg" alt="image">
+</div>
+
+<div>
+
+	<h3>From our readers:</h3>
+
+	<p><em>&#8220;I like the part where the octopuses get the Christmas oyster snow.&#8221;</em></p>
 
 </div>
 
-<div class="section3">
+</article>   <!-- end section 5  -->
 
-    <h2>Section 3 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/3.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
+<article>   <!-- start section 6: available-->  
 
-        </div>
+	<hr>
+	<div class="screenshots">
+	<h2>Section 6</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/6.jpg" alt="image">
+	<hr>
+	<h4>Molecules:</h4>
+	<img src="img/6.1.jpg" alt="image"><br>
+	<img src="img/6.2.jpg" alt="image">	
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/6.1.1.jpg" alt="image"><br>
+	<img src="img/6.1.2.jpg" alt="image"><br>
+	<img src="img/6.2.1.jpg" alt="image"><br>
+	<img src="img/6.2.2.jpg" alt="image">			
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
 
+<h2>Available in hardcover and e-book:</h2>
+
+<p>Reserve your copy now in either hardcover or digital format. Give the gift of a different kind of Christmas story.</p>
+
+<div><a>image</a></div>
+
+<div><a href="#">Available at bookshop.org</a></div>
+
+<div>
+<a href="#">image</a>
 </div>
 
-<div class="section4">
-
-    <h2>Section 4 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/4.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
-
-        </div>
-
+<div>
+<a href="#">image</a>
 </div>
+    
+</article>   <!-- end section 6  -->
 
-<div class="section5">
-
-    <h2>Section 5 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/5.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
-
-        </div>
-
-</div>
-
-<div class="section6">
-
-    <h2>Section 6 Component:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/6.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
-
-        </div>
-
-</div>
-
-<!-- end sections -->
-
+</main><!-- end sections between header and footer --> 
 
 <!-- start footer -->
 
-<div class="footer-section">
+	<div class="screenshots">
+	<h2>Footer Section</h2>
+	<hr>
+	<h3>Organism:</h3> 
+	<img src="img/7.jpg" alt="image">
+	<hr>
+	<h4>Molecules: (none)</h4>
+	<hr>
+	<h5>Adoms:</h5>
+	<img src="img/7.1.jpg" alt="image"><br>
+	<img src="img/7.2.jpg" alt="image"><br>
+	<img src="img/7.3.jpg" alt="image"><br>		
+	<hr>
+	<h6>Code:</h6>
+	<hr>	
+	</div>
+	
+<hr>
+<footer>	
+<nav>
+<ul class="footer-nav-bar">
+<li class="footer-nav-bar__item"><a href="#"  id="facebook-icon" ><i class="fab fa-facebook"></i></a></li>
+<li class="footer-nav-bar__item"><a href="#" id="twitter-icon"><i class="fab fa-twitter"></i></a></li>
+<li class="footer-nav-bar__item"><a href="#" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>     
+</ul>
+</nav>
+</footer><!-- end footer -->
 
-    <h2>Footer:</h2> 
-    <hr>
-    <div class="screenshots">
-        <img src="img/7.jpg" alt="image">
-        <hr>
-        </div>
-        <div class="code">
-        
-            <h3>Code:</h3>      
-            <hr>
+</div> <!-- end sections code wrapper --> 
 
-            <footer>
-                <nav>
-                    <ul class="footer-nav-bar">
-                    
-                
-                      <li class="footer-nav-bar__item"><a href="#"  id="facebook-icon" ><i class="fab fa-facebook"></i></a></li>
-                
-                      <li class="footer-nav-bar__item"><a href="#" id="twitter-icon"><i class="fab fa-twitter"></i></a></li>
-                
-                      <li class="footer-nav-bar__item"><a href="#" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>     
-                        
-                    </ul>
-                </nav>
-                </footer>               
-                <!-- end footer -->
-        </div>
-</div>
-</div>
-</div>
 </body>
 </html>

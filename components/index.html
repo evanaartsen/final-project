@@ -17,6 +17,62 @@
 <script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
 
 <style>
+
+/*section 2*/
+.button {
+flex-grow: 1;background-image: url("img/gradient.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+padding: 10px;
+margin: 5px;
+border-radius: 10px;
+text-align: center;
+text-transform: uppercase;
+}
+a:link{
+color: white;
+text-decoration: none;
+}
+ 
+
+.section2{
+display: inline-flex;
+flex-wrap: wrap;
+max-width: 100%;
+margin: 0 auto;
+justify-content: center;	
+align-items: center;
+}
+
+
+.section2__img{
+display: block;	
+max-width: 100%;
+margin: 0 auto;
+height: 60%;
+object-fit:fill;
+}
+
+
+.section2__txt{
+display: block;		
+max-width: 50%;
+margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+a:link{
+color: white;
+}
 	body{
 		text-align: center;
 font-size:.5em;
@@ -88,7 +144,7 @@ height: 150px;
 
 .flex-container{
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
   justify-content: center; 
 }
 
@@ -202,17 +258,17 @@ margin: 0 auto;
 }
 
 img{
-	min-height: 100%;
-	object-fit:cover;
+height: 400px;
+object-fit: cover;
 }
 
 </style>
-<!--------------- end styles ----------------->
-<!--------------- end styles ----------------->
+
 </head>
 
 <body>
-
+<!--------------- end styles ----------------->
+<!--------------- end styles ----------------->
 <div class="outer-container">
 
 <h1>Components</h1>
@@ -226,6 +282,7 @@ img{
 	<img src="img/type-color.jpg" alt="image">
 	<hr>
 	</div>
+</div>	
 <!-- end defaults -->
 
 <!-- start header -->
@@ -282,7 +339,7 @@ img{
 
 
 
-<article> <!-- start section 1 -->
+<article> <!-- start section 1 hero-->
 
 	<hr>
 	<div class="screenshots">
@@ -316,7 +373,13 @@ img{
 
 </article>   <!-- end section 1: hero with background image -->
 
-<article> <!-- start section 2: available-->
+
+
+
+
+<!-- start section 2: -->
+
+
 
 	<hr>
 	<div class="screenshots">
@@ -343,32 +406,34 @@ img{
 	<hr>	
 	</div>
 
-<div class="s2 flex-container">
-
-<div class="s2-flex-item-left">
-
-<figure>
-  <img src="img/2.1.1.jpg" alt="img">
-  <figcaption class="caption">Meet Doris and Shelly</figcaption>
-</figure>
-
-</div>
-<div class="s2-flex-item-right">
-<h2>The Octopus&#8217;s Holiday</h2>
-
-<p>Christmas will never be the same again in the little town of Fishery. And it will never be the same again for you, thanks to two one-of-a-kind octopus friends named Doris and Shelly.&nbsp;</p>
 
 
 
 
-<div class="col-flex">
-  <a href="#" class="button">Available at Bookshop.org</a>
-  <a href="#" class="button">Available at Amazon.com</a>  
-</div>
-</div>
-</div>
 
-</article>   <!-- end section 2:  -->
+
+    <section class="section2">    
+
+      <article >
+      <img src="img/2.1.jpg" alt="img"  class="section2__img">
+      </article>
+
+      <article class="section2__txt">
+   
+        <h3>THE OCTOPUS’S HOLIDAY</h3>
+        
+          <p>Christmas will never be the same again in the little town of Fishery. And it will never be the same again for you, thanks to two one-of-a-kind octopus friends named Doris and Shelly. </p>
+    
+ <div class="col-flex">
+  <a href="#" class="button">Available at Bookshop.org</a><br><br><br><br>
+  <a href="#" class="button">Available at Amazon.com</a></div>
+
+      </article>
+
+	</section> 
+	
+<!--end section 2:  -->
+
 
 
 <article> <!-- start section 3: features-->
@@ -514,6 +579,7 @@ img{
 </article>   <!-- end section 6  -->
 
 
+</main>
 
 <!-- start footer -->
 
@@ -530,9 +596,10 @@ img{
 	<img src="img/7.2.jpg" alt="image"><br>
 	<img src="img/7.3.jpg" alt="image"><br>		
 	<hr>
-	<h6>Code:</h6>
-	<hr>	
+	
 	</div>
+
+<!-- end footer -->
 
 </div> <!-- end sections code wrapper --> 
 

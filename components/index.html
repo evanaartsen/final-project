@@ -7,7 +7,10 @@
 
 <link href="css/normalize.css" rel="stylesheet" />	
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- -->
+	<link href="css/styles.css" rel="stylesheet" />	
+	<script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -16,6 +19,7 @@
 <style>
 	body{
 		text-align: center;
+font-size:.5em;
 	}
 img{
 	display: inline-block;
@@ -30,8 +34,181 @@ img{
 #selected{
 	color: orange;
 }
-</style>
+.s1{
+display: block;
+margin-top: 40px;
+background-image: url("img/s1bg.jpg");
+height: 300px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 90% 90%;
+}
 
+.s1 h1{
+color: #fff;
+text-transform: uppercase;
+font-size: 1.1em;
+font-weight: 400;
+}
+
+.s1>h2{
+display: block;
+color: #000;
+text-transform: uppercase;
+font-size:.5em;
+text-align: left;
+padding-left: 5%;
+background-color: #fff;
+width: 100%;
+height: 10px;
+font-weight: 400;
+}
+
+.s1 div{
+display: block;
+background-color: #fff;
+min-width: 100px;
+width: 80%;
+height: 30px;
+font-weight: 300;
+margin: 0 auto;
+}
+
+.s1 p{
+color: #6c66e0;
+background-color: #fff;
+font-size:.6em;
+line-height: 3em;
+}
+
+.s2{
+display: block;
+height: 150px;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: center; 
+}
+
+.s2-flex-item-left {
+  width: 60%;
+}
+
+.s2-flex-item-left img{
+width: 100%;
+}
+
+.s2-flex-item-right {
+  width: 40%;
+}
+
+.s2 h2{
+font-size: .5em;
+}
+
+.s2 p{
+font-size: .5em;
+}
+.caption{
+display: inline-block;
+font-size: .01em;
+
+}
+
+.col-flex {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.button {
+flex-grow: 1;background-image: url("img/gradient.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+padding: 10px;
+margin: 5px;
+border-radius: 10px;
+text-align: center;
+
+text-transform: uppercase;
+}
+
+.s2 *{
+font-size: .1em;
+color: #6c66e0;
+} 
+.s2 a{
+font-size: .1em;
+color: #fff;
+}
+.caption{
+display: inline-block;
+font-size: .01em;
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+/*FEATURED*/ 
+
+.featured-section{
+display: flex;
+max-width: 80%;
+margin: 0 auto;	
+background-color: red;
+color: purple;
+}
+.featured-section__post{
+max-width: 50%;
+margin: 0 auto;
+}
+
+.featured-section *{
+padding: 10px;
+}
+.featured-section__img{
+max-width: 100%;
+margin: 0 auto;
+}
+.content-wrap{
+max-width: 75rem;
+margin: 0 auto;
+display: flex;
+}
+.page-section-posts{
+text-align: center;
+}
+.page-section-post{
+display: inline-flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 4px;
+max-width: 24rem;
+text-align: left;
+}
+.page-section-post img{
+max-width: 95%; 
+margin: 0 auto;  
+}
+
+img{
+	min-height: 100%;
+	object-fit:cover;
+}
+
+</style>
+<!--------------- end styles ----------------->
+<!--------------- end styles ----------------->
 </head>
 
 <body>
@@ -102,6 +279,9 @@ img{
 
 <main> <!-- start sections between header and footer  -->
 
+
+
+
 <article> <!-- start section 1 -->
 
 	<hr>
@@ -124,11 +304,15 @@ img{
 	<hr>	
 	</div>
 
-<div><h1 >Home</h1></div>
+<div class="s1">
+
+<h2>Home</h2>
 
 <h1 >Welcome to Paul Pycraft</h1>
-
+<div class="">
 <p>Author of The Octopus Series Children&#8217;s Books</p>
+</div>
+</div>
 
 </article>   <!-- end section 1: hero with background image -->
 
@@ -142,7 +326,7 @@ img{
 	<img src="img/2.jpg" alt="image">
 	<hr>
 	<h4>Molecules:</h4>
-	<img src="img/2.1.JPG" alt="image">	
+	<img src="img/2.1.jpg" alt="image">	
 	<img src="img/2.2.JPG" alt="image">	
 
 	<hr>
@@ -159,21 +343,33 @@ img{
 	<hr>	
 	</div>
 
-<div>
-<figure>
-<img src="img/2.1.1.jpg" alt="image">
-<figcaption>Meet Doris and Shelly</figcaption>
-</figure>
-</div>
+<div class="s2 flex-container">
 
+<div class="s2-flex-item-left">
+
+<figure>
+  <img src="img/2.1.1.jpg" alt="img">
+  <figcaption class="caption">Meet Doris and Shelly</figcaption>
+</figure>
+
+</div>
+<div class="s2-flex-item-right">
 <h2>The Octopus&#8217;s Holiday</h2>
 
 <p>Christmas will never be the same again in the little town of Fishery. And it will never be the same again for you, thanks to two one-of-a-kind octopus friends named Doris and Shelly.&nbsp;</p>
 
-<div><a>Available at Bookshop.org</a></div>
-<div><a>Available at Amazon.com</a></div>
+
+
+
+<div class="col-flex">
+  <a href="#" class="button">Available at Bookshop.org</a>
+  <a href="#" class="button">Available at Amazon.com</a>  
+</div>
+</div>
+</div>
 
 </article>   <!-- end section 2:  -->
+
 
 <article> <!-- start section 3: features-->
 
@@ -317,7 +513,7 @@ img{
     
 </article>   <!-- end section 6  -->
 
-</main><!-- end sections between header and footer --> 
+
 
 <!-- start footer -->
 
@@ -337,17 +533,6 @@ img{
 	<h6>Code:</h6>
 	<hr>	
 	</div>
-	
-<hr>
-<footer>	
-<nav>
-<ul class="footer-nav-bar">
-<li class="footer-nav-bar__item"><a href="#"  id="facebook-icon" ><i class="fab fa-facebook"></i></a></li>
-<li class="footer-nav-bar__item"><a href="#" id="twitter-icon"><i class="fab fa-twitter"></i></a></li>
-<li class="footer-nav-bar__item"><a href="#" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>     
-</ul>
-</nav>
-</footer><!-- end footer -->
 
 </div> <!-- end sections code wrapper --> 
 

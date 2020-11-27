@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <title>Case Study</title>
 
 <meta charset="utf-8">
@@ -15,289 +14,338 @@
 <script src="https://kit.fontawesome.com/a1e57ac401.js" crossorigin="anonymous"></script>
 
 <style>
+	body{
+		text-align: center;
+	}
+img{
+	display: inline-block;
+	width:50%;
+}
+
+.right{
+	display: inline;
+	text-align:right;
+}
+
+#selected{
+	color: orange;
+}
+
+
+
+
+
+
+
+
+
+img{
+width: 50%;
+}
+
 *,
 *:before,
 *:after {
-box-sizing: border-box;
-}
-body{
-font-family: 'Roboto', sans-serif; /*to simulate unavailable font*/
-background-color: #eee;
+  box-sizing: border-box;
 }
 
-.outer-wrap{
-background-color: #fff;
-width: 98%;
-margin: 10px auto;
+.outer-container{
+text-align: center;
 max-width: 1200px;
+width:80%;
+margin: 0 auto;
+padding-top: 10px;
+padding-bottom: 80px;
 }
 
-
+body{
+	font-family: 'Roboto', sans-serif; /*to simulate unavailable font*/
+	background-color: #fff;	
+}
+	
 li{
 list-style: none;
 }
+
 a:link{
 text-decoration: none;	
 }
+
 a{
-color: #fff;
+color: white;
 }
-h3{
-color: #261391;
-}
+
 p{
 color: #6c66e0;
 }
+
 .button {
 display:inline-block;
 background-image: url("img/gradient.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: 100% 100%;
-padding: 15px;
+padding: 10px;
 margin: 5px;
-border-radius: 99px;
+border-radius: 10px;
 text-align: center;
 text-transform: uppercase;
 }
+
 .button ul{
 flex-direction: column;
 }
-header a{
-color: #000;
+
+
+
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin:0;
 }
-.nav-wrap {
-display: flex;
-justify-content: space-between;
-line-height: .125em;
-}
+
 .logo{
+width: 40%;
 text-transform: capitalize;
-font-size: .8rem;
+font-size: .9rem;
 font-weight: bold;
 color: #000;
-margin-left: -20px;
 }
-.nav-bar1, .nav-bar2{
-display: flex; padding-right: 20px;
+
+.nav-bar1{
+display: flex;
 }
-.nav-bar1__item a, .nav-bar2__item a{
+.nav-bar1__item a{
 font-size: .7em;
+flex-basis: 400px; 
 padding:5px;
 align-items: center;
 text-transform: uppercase;
-} 
-
-#selected{
-color: #f5856f;
 }
  
-.section1{
+.nav-bar2{
+display: flex;
+}
+
+.nav-bar2__item a{ 
+font-size: .7em;
+flex-basis: 800px; 
+padding:5px;
+align-items: center;
+text-transform: uppercase;
+}
+
+header a{
+color: #000;
+}
+
+#selected{
+color: orange;
+}
+
+ 
+.s1{
 display: block;
-background-image: url("img/1bg.jpg");
-height: 600px;
+margin-top: 40px;
+background-image: url("img/s1bg.jpg");
+height: 300px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: 90% 90%;
 }
-.section1 h1{
+
+.s1 h1{
 color: #fff;
 text-transform: uppercase;
-font-size: 3em;
+font-size: 1.1em;
 font-weight: 400;
 text-align:center;
-line-height:.5em;
 }
-.section1 h2{
+
+.s1 h2{
 display: block;
 color: #000;
 text-transform: uppercase;
-font-size: 1.5em;
+font-size:.5em;
 text-align: left;
 padding-left: 5%;
 background-color: #fff;
 width: 100%;
+height: 10px;
 font-weight: 400;
-height: 30px;
 }
-.section1 p{
+
+.s1 div{
+display: block;
+background-color: #fff;
+min-width: 100px;
+width: 80%;
+height: 30px;
+font-weight: 300;
+margin: 0 auto;
+}
+
+.s1 p{
 color: #6c66e0;
 background-color: #fff;
-font-size:1.5em;
-font-weight: 300;
-padding: 20px;
+font-size:.6em;
+line-height: 3em;
 text-align:center;
-width: 80%;
-margin: 0 auto;
 }
 
-.section2-container {
-display: block;
-} 
-.section2 {
-display: block;
-width: 95%;
-margin: 40px auto;
+
+
+.s2{
 display: flex;
+flex-direction: row;
 flex-wrap: wrap;
-}
-.section2 div {
-position: relative; 
-min-width: 450px;
-min-height: 500px;
-width: 50%;
+max-width: 100%;
 margin: 0 auto;
-height: 50px; 
-}
-.section2 img{
-position: absolute; 
-width: 100%;
-height:500px;
-}
-.section2 h3{
-color: #261391;
-text-align: center;
-font-size: 1.25em;
-}
-.section2 p {
-padding: 5%;
-text-align: center;
-line-height: 1.5em;
+justify-content: center;	
+align-items: center;
 }
 
-.section2-buttons {
-text-align: left;
+.s2__img{
+display: block;	
+max-width: 100%;
+margin: 0 auto;
+height: 60%;
+object-fit:fill;
 }
 
-.section3-container {
-display: block;
-} 
-.section3 {
-display: block;
-width: 95%;
+.s2__txt{
+display: block;	
+max-width: 50%;
 margin: 0 auto;
+color: #6c66e0;
+}
+
+.s2__txt p{
+color: #6c66e0;
+}
+
+.s2-buttons{
 display: flex;
-flex-wrap: wrap;
-margin: 40px auto;
 }
-.section3 div {
-position: relative; 
-min-width: 450px;
-min-height: 400px;
-width: 50%;
+
+
+
+.s3{
+min-height: 300px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 100%;
 margin: 0 auto;
-height: 50px; 
+justify-content: center;	
+align-items: center;
+}
+
+.s3__txt{
+display: block;
+text-align: center;	
+max-width: 50%;
+margin: 0 auto;
+color: #fff;
 background-image: url("img/gradient.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: 100% 100%;
 }
-.section3 img{
-position: absolute; 
-width: 100%;
-height:400px;
-}
-.section3 article {
-position: absolute; 
-padding: 20%;
-width: 100%;
-text-align: center;
-}
-.section3 article *{
-color: #fff;
-line-height:2.25em;
-}
 
-.section4-container {
-display: block;
-}
-
-.section4 {
-display: block;
-width: 95%;
+.s3__img{
+display: block;	
+max-width: 100%;
 margin: 0 auto;
+height: 100%;
+object-fit:fill;
+}
+
+
+
+.s4{
+min-height: 300px;
 display: flex;
+flex-direction: row;
 flex-wrap: wrap;
-margin: 40px auto;
-}
-.section4 div {
-position: relative; 
-min-width: 450px;
-min-height: 400px;
-width: 50%;
+max-width: 100%;
 margin: 0 auto;
-height: 50px; 
-}
-.section4 img{
-position: absolute; 
-width: 100%;
-height:400px;
-}
-.section4 article {
-position: absolute; 
-padding: 10%;
-width: 100%;
-text-align: left;
+justify-content: center;	
+align-items: center;
 }
 
-.section5-container {
-display: block;
-}
-.section5 {
-display: block;
-width: 95%;
+.s4__txt{
+display: block;	
+max-width: 40%;
 margin: 0 auto;
+}
+
+.s4__img{
+display: block;	
+max-width: 100%;
+margin: 0 auto;
+height: 100%;
+object-fit:fill;
+}
+
+
+
+.s5{
 display: flex;
+flex-direction: row;
 flex-wrap: wrap;
-}
-.section5 div {
-position: relative; 
-min-width: 450px;
-min-height: 400px;
-width: 50%;
+max-width: 100%;
 margin: 0 auto;
-height: 50px; 
+justify-content: center;	
+align-items: center;
+}
+
+.s5__img{
+display: block;	
+max-width: 100%;
+margin: 0 auto;
+height: 60%;
+object-fit:fill;
+}
+
+.s5__txt{
+display: block;	
+max-width: 50%;
+margin: 0 auto;
 background-image: url("img/gradient.jpg");
 background-repeat: no-repeat;
 background-position: center;
 background-size: 100% 100%;
-}
-.section5 img{
-position: absolute; 
-width: 100%;
-height:400px;
-}
-.section5 article {
-position: absolute; 
-padding: 20%;
-width: 100%;
-text-align: center;
-}
-.section5 article *{
 color: #fff;
-line-height:2.25em;
 }
 
-.section6-container {
-display: block;
+.s5__txt p{
+color: #fff;
 }
-.section6{
-width: 95%;
-margin; 0 auto;
+
+.s6{
 display: block;
 padding: 40px;
+margin-top: 40px;  
 }
-.section6 h2{
-color: #261391;
+
+.s6 h2{
+color: #6c66e0;
 text-transform: uppercase;
-font-size:1.2em;
+font-size:1.5em;
 text-align: center;
 font-weight: 400;
 }
 
-.section6 p{
-text-align: center;
+.s6 p{
+color: #6c66e0;
+font-size:.6em;
+text-align:center;
 }
+
+
+
 footer{
 padding:5px;
 }
@@ -310,9 +358,17 @@ padding:5px 5px 5px 15px;
 }
 .footer-nav-bar__item {
 list-style: none; 
+font-size:.75em;
+flex-basis: 50px; 
+}
+.footer-nav-bar{
+display: inline-flex;
+width: 100%;
+}
+.footer-nav-bar__item {
+list-style: none; 
 font-size:1.25em;
 padding-right: 5px;
-flex-basis: 50px;
 }
 #facebook-icon {
 color: #0079e1;
@@ -330,20 +386,27 @@ color: #eb006b;
 
 <body>
 
-<!-- start outer wrap-->	
-<div class="outer-wrap">
+<div class="outer-container"> 	
+
 <header>	  
 
 <!-- start site-navigation -->
 
 <nav>
 
-<div class="nav-wrap">
 
-<ul>
-<li class="logo"><a href="#">PAUL&nbsp;PYCRAFT</a></li>
+
+<div class="wrap">
+
+<ul class="">
+<li class="logo"><a href="#">PAUL PYCRAFT</a></li>
 </ul>
 
+ <!--
+  <div>
+    <span class="logo">PAUL PYCRAFT</span>
+  </div>
+-->
  <div>
   <ul class="nav-bar1">
   
@@ -356,158 +419,140 @@ color: #eb006b;
 
 </nav>
 
-<div class="nav-wrap">
+<div class="wrap">
   <div>
     <span>&nbsp;</span>
+
   </div>
+  <div>
   
-<div>
-    
+  
   <ul class="nav-bar2">
 <li class="nav-bar2__item"><a href="#">About&nbsp;the&nbsp;Author</a></li>
 <li class="nav-bar2__item"><a href="#">Contact</a></li>	
 </ul>
 
+  
+  </div>
 </div>
-</div>
+
+
+					
+
+
+
 
 <!-- end site-navigation -->
 
 </header>
 <!-- end header -->       
 
+<main> 
+
+<!----------- start sections 1-6 ----------->
+
 <!-- start section 1 -->
-<div class="section1">
-
 <article> 
-<hr>
-<h2>Home</h2>
 
-<h1 >Welcome to Paul Pycraft</h1>
+	<div><h1 >Home</h1></div>
 
-<p>Author of The Octopus Series Children&#8217;s Books</p>
+	<h1 >Welcome to Paul Pycraft</h1>
 
-</article>
-</div>  
+	<p>Author of The Octopus Series Children&#8217;s Books</p>
+
+</article>   
 <!-- end section 1 -->
 
+<!-- start section 2 -->
+    <section class="s2">    
 
-<!-- start section2 --> 
-<div class="section2-container">
-<div class="section2">
+      <article >
+      <img src="img/2.1.jpg" alt="img"  class="s2__img">
+      </article>
 
-	<div>
-		<!--<img src="img/2.1.jpg" alt="img">--> 
-		<img src="img/s2.1.jpg" alt="img">  
-	</div> 
-
-	<div>
-
-		<article>
+      <article class="s2__txt">
    
-<h3>THE OCTOPUS’S HOLIDAY</h3>
+        <h3>THE OCTOPUS’S HOLIDAY</h3>
         
           <p>Christmas will never be the same again in the little town of Fishery. And it will never be the same again for you, thanks to two one-of-a-kind octopus friends named Doris and Shelly. </p>
  
-<article class= "section2-buttons">
+<div class= "s2-buttons">
 <ul> 
  <li> <a href="#" class="button">Available at Bookshop.org</a></li> 
-  <li> <a href="#" class="button">Available at Amazon.com</a> </l    
+  <li> <a href="#" class="button">Available at Amazon.com</a> </li>    
 </ul>
-</article>      
- 		  
-		</article>
-	</div> 
+</div>      
 
-</div>
-</div>
-<!-- end section2 --> 
+</article>
+	</section> 
+<!-- end section 2  -->
 
-<!-- start section3 --> 
-<div class="section3-container">
-<div class="section3">
+<!-- start section 3 -->
+<section class="s3">    
 
-	<div>
-
-		<article>
+      <article class="s3__txt">
    
- <h3>WATCH SPECIAL FEATURES</h3>
+        <h3>WATCH SPECIAL FEATURES</h3>
         
           <p>Enjoy amazing videos of the talented Melissa Vandiver’s original illustrations coming to life</p>
-		  
-		</article>
+      </article> 
 
-	</div>  
+      <article>
+      <img src="img/3.2.jpg" alt="img"  class="s3__img" >
+      </article>
 
-	<div>
-		<img src="img/3.2.jpg" alt="img">  
-	</div> 
 
-</div>
-</div>
+	</section>  
+<!-- end section 3  -->
+</main>
 
-<!-- end section3 --> 
+<!-- start section 4 -->
+ <section class="s4">    
 
-<!-- start section4 --> 
-<div class="section4-container">
-<div class="section4">
-
-	<div>
-
-		<article>
+      <article class="s4__txt">
    
-<h3>THE OCTOPUS SERIES</h3>
+        <h3>THE OCTOPUS SERIES</h3>
         
-          <p>Find out more about the next book in the series: An Eight-Legged Walk through Octopus Town.</p>
+         <p>Find out more about the next book in the series: An Eight-Legged Walk through Octopus Town.</p>
  
-<article class= "section4-buttons">
+<div class= "s4-buttons">
 <ul> 
- <ul> 
  <li> <a href="#" class="button">learn more</a></li>     
 </ul>
-</ul>
-</article>      
- 		  
+</div>
+
+      </article>
+
+      <article >
+      <img src="img/4.2.jpg" alt="img"  class="s2__img">
+      
+
 		</article>
-	</div> 
 
-	<div>
-		<img src="img/4.2.jpg" alt="img">  
-	</div> 
 
-</div>
-</div>
-<!-- end section4 --> 
+	</section>   
+<!-- end section 4  -->
 
-<!-- start section5 --> 
-<div class="section5-container">
-<div class="section5">
+<!-- start section 5 -->
+<section class="s5">    
 
-	<div>
-		<img src="img/5.1.jpg" alt="img">  
-	</div> 
+      <article >
+      <img src="img/5.1.jpg" alt="img"  class="s5__img">
+      </article>
 
-	<div>
-
-		<article>
+      <article class="s5__txt">
    
         <h3>From Our Readers:</h3> 
 
           <q>I like the part where the octopuses get the Christmas oyster snow.</q> 
 		  
 		  <p>— Delphie, age 6</p> 
-		</article>
+</article>
+	</section>  
+<!-- end section 5  -->
 
-	</div>  
-
-</div>
-</div>
-<!-- end section5 --> 
-
-
-<!-- start section6 --> 
-<div class="section6-container">
-<section class="section6">
+<!-- start section 6 -->
+<section class="s6">
 
 <article>
  
@@ -518,7 +563,7 @@ color: #eb006b;
 </article>
 
 <article>
-<div class= "section6-buttons">
+<div class= "s6-buttons">
 <ul> 
  <li> <a href="#" class="button">Available at Bookshop.org</a></li> 
   <li> <a href="#" class="button">Available at Amazon.com</a> </li>    
@@ -526,9 +571,10 @@ color: #eb006b;
 </div>
 </article>
    
-</section>
-</div>
-<!-- end section6 --> 
+</section>  
+<!-- end section 6  -->
+
+<!--------------- end main --------------->
 
 <!-- start footer --> 
 
@@ -542,8 +588,8 @@ color: #eb006b;
 </nav>
 </footer>
 <!-- end footer -->	
-</div>  
-<!--end outer wrap -->
+       
+</div> <!-- end outer container -->
 
 </body>
 </html>
